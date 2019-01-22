@@ -8,15 +8,15 @@ namespace MediaLibraryApp
 {
     class Book
     {
-        public string title;
-        public string author;
-        private string protagonist;
+        public string Title;
+        public string Author;
+        //private string protagonist;
 
-        public Book(string Title, string Author, string Protagonist)
+        public Book(string title, string author)
         {
             Title = title;
             Author = author;
-            Protagonist = protagonist;
+            //Protagonist = protagonist;
 
         }
 

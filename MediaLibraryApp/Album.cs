@@ -8,15 +8,15 @@ namespace MediaLibraryApp
 {
     class Album
     {
-       public string name;
-       public string band;
-       private string genre;
+       public string Name;
+       public string Band;
+       //private string genre;
 
-        public Album(string Name, string Band, string Genre)
+        public Album(string name, string band)
         {
             Name = name;
             Band = band;
-            Genre = genre;
+            //Genre = genre;
         }
 
     }

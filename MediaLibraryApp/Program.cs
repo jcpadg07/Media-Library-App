@@ -10,14 +10,19 @@ namespace MediaLibraryApp
     {
         static void Main(string[] args)
         {
-            Album album = new Album("Z", "My Morning Jacket", "Religious experience/Expand-your-mind rock");
+            Album album = new Album("Z", "My Morning Jacket");
 
-            Book book = new Book("1984", "Orson Wells", "Winston");
+            Book book = new Book("1984", "George Orwell");
            
 
-            Console.WriteLine("The book " + book.title + " was written by " + book.author + ".");
+            Console.WriteLine("The book " + book.Title + " was written by " + book.Author + ".");
 
-            Console.WriteLine("The album " + album.name + " by " + album.band + ".");
+            Console.WriteLine("The album " + album.Name + " by " + album.Band + ".");
+
+            album.Name = "Reflektor";
+            album.Band = "Arcade Fire";
+
+            Console.WriteLine("The album " + album.Name + " by " + album.Band + ".");
 
             Console.ReadLine();
 
